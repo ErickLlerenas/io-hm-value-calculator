@@ -17,5 +17,3 @@
   ```
     npm run server
   ```
-
-### You are done
