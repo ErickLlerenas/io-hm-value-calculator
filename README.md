@@ -17,3 +17,9 @@
   ```
     npm run server
   ```
+
+- Run tests (For unit testing)
+
+  ```
+    npm run test
+  ```
