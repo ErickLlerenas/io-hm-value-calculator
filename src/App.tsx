@@ -29,7 +29,6 @@ export default function App() {
         data: { multiplier },
       } = await axios.get(`/api/multiplier/${selectedColors[2]}`);
 
-      // Usamos el método calculateOhmValue con los colores seleccionados y el multiplicador obtenido del endpoint
       const ohmValue =
         calculator.calculateOhmValue(
           selectedColors[0],
@@ -37,7 +36,6 @@ export default function App() {
           selectedColors[2]
         ) * multiplier;
 
-      // Muestra el valor calculado en un diálogo de SweetAlert2
       Swal.fire({
         title: "Valor Calculado",
         text: `Valor de la resistencia: ${ohmValue} Ohms`,
@@ -67,7 +65,7 @@ export default function App() {
           {selectedColors.map((color, index) => (
             <div
               key={index}
-              style={{ backgroundColor: getColorHex(color) }} // Usamos estilos en línea aquí
+              style={{ backgroundColor: getColorHex(color) }}
               className="h-36 w-10 mx-5 cursor-pointer"
               onClick={() => handleBandClick(index)}
             />

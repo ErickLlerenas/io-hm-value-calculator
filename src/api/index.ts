@@ -6,7 +6,6 @@ const router = express.Router();
 const calculator = new IOhmValueCalculator();
 const app = express();
 
-// Rutas definidas correctamente
 router.get("/multiplier/:color", (req, res) => {
   const color: Color = req.params.color as Color;
 
@@ -31,7 +30,6 @@ router.get("/tolerance/:color", (req, res) => {
   }
 });
 
-// Montando el router en la aplicación Express bajo el prefijo '/api'
 app.use("/api", router);
 
 app.listen(4000, () => {
