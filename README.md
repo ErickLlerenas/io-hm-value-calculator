@@ -1,25 +1,21 @@
-# Instrucciones para correr la aplicacion
+# Instructions to run the app
 
-- instalar dependencias
+- Install dependencies
 
   ```
     npm i
   ```
 
-- correr el commando
+- Run the react app
 
   ```
     npm run dev
   ```
 
-  Para correr la UI
-
-  - correr el commando
+  - Run the Express server
 
   ```
     npm run server
   ```
 
-  Para correr el servidor
-
-### Listo!
+### You are done
