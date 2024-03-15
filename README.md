@@ -1,4 +1,4 @@
-# Instructions to run the app
+# Instructions:
 
 - Install dependencies
 
@@ -12,7 +12,7 @@
     npm run dev
   ```
 
-  - Run the Express server
+- Run the Express server
 
   ```
     npm run server
