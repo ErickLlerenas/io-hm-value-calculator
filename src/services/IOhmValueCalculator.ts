@@ -4,11 +4,10 @@ export class IOhmValueCalculator {
   public calculateOhmValue(
     bandAColor: Color,
     bandBColor: Color,
-    bandCColor: Color
+    multiplier: number
   ): number {
     const firstDigit = this.getColorValue(bandAColor);
     const secondDigit = this.getColorValue(bandBColor);
-    const multiplier = this.getMultiplierValue(bandCColor);
 
     return (firstDigit * 10 + secondDigit) * multiplier;
   }

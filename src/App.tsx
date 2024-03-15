@@ -29,12 +29,11 @@ export default function App() {
         data: { multiplier },
       } = await axios.get(`/api/multiplier/${selectedColors[2]}`);
 
-      const ohmValue =
-        calculator.calculateOhmValue(
-          selectedColors[0],
-          selectedColors[1],
-          selectedColors[2]
-        ) * multiplier;
+      const ohmValue = calculator.calculateOhmValue(
+        selectedColors[0],
+        selectedColors[1],
+        multiplier
+      );
 
       Swal.fire({
         title: "Valor Calculado",
