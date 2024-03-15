@@ -45,7 +45,12 @@ export default function App() {
         confirmButtonText: "Ok",
       });
     } catch (error) {
-      console.error("Error al calcular el valor de la resistencia: ", error);
+      Swal.fire({
+        title: "Error",
+        text: "No se pudo calcular el valor de la resistencia.",
+        icon: "error",
+        confirmButtonText: "Ok",
+      });
     }
   };
 
