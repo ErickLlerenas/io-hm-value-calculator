@@ -51,7 +51,12 @@ export default function App() {
 
   return (
     <div className="bg-gray-800 h-screen">
-      <h1 className="text-3xl text-center text-white pt-24">Resistencia</h1>
+      <h1 className="text-3xl text-center text-white pt-24">
+        Calculadora de resistencia
+      </h1>
+      <p className="text-center text-gray-500">
+        Cambia al color que deseas calcular
+      </p>
       <div className="flex justify-center mt-56 relative">
         <div className="w-96 h-36 bg-orange-100 flex flex-row justify-center rounded-full px-12">
           {selectedColors.map((color, index) => (
@@ -72,7 +77,7 @@ export default function App() {
           onClick={calculateOhmValue}
           className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
         >
-          Calcular Valor
+          Calcular Ohms
         </button>
       </div>
     </div>
